@@ -1,0 +1,46 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    margin: 10px 60px;
+}
+
+.vertical-align-navbar{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title-navbar{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.title-navbar:hover {
+    color: rgb(117, 117, 117);
+}
+
+.login-button-navbar{
+    font-size: larger;
+    color: rgb(0, 120, 192);
+    background-color: transparent;
+    border: rgb(0, 96, 144) solid 2px;
+    border-radius: 5px;
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-button-navbar:hover {
+    background-color: rgb(0, 96, 144);
+    cursor: pointer;
+    color: white;
+}
+
+.search-icon-navbar{
+    height: 130%;
+    width: 130%;
+    cursor: pointer;
+    color: rgb(0, 120, 192);
+}
