@@ -4,6 +4,7 @@
     justify-content: space-between;
     height: 60px;
     margin: 10px 60px;
+    align-content: center;
 }
 
 .vertical-align-navbar{
@@ -43,4 +44,9 @@
     width: 130%;
     cursor: pointer;
     color: rgb(0, 120, 192);
+}
+
+.login-button {
+    margin-top: auto;
+    margin-bottom: auto;
 }
