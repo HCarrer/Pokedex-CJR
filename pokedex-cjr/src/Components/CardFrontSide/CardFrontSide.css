@@ -1,0 +1,10 @@
+#card-front-side{
+    width: 252px;  /* original: 6.3cm*/
+    height: 352px; /* original: 8.8cm*/
+    border: solid black 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+    background-color: white;
+    font-size: xx-large;
+    text-align: center;
+}
