@@ -1,5 +1,3 @@
-import LoginButton from '../Components/LoginButton/LoginButton';
-import Popup from 'reactjs-popup';
 import './LoginForm.css'
 
 const LoginForm = () => {

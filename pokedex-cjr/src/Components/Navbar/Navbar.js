@@ -5,11 +5,12 @@ import LoginButton from '../LoginButton/LoginButton';
 
 const Navbar = () => {
 
+
     return(
         <div>
             <div className="navbar-container">
                 <div className="vertical-align-navbar">
-                    <FaSearch className="search-icon-navbar"/>
+                    <FaSearch/>
                 </div>
                 <h1 className="vertical-align-navbar">
                     <a href="/" className="title-navbar">POKEDEX</a>
