@@ -6,5 +6,58 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
     background-color: white;
     font-size: xx-large;
+    font-weight: normal;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.id-kind-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.weight-height-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -20px 20px 0 20px;
+}
+
+.weight-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.height-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kind-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.kind{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 100%;
+    border: solid black 3px;
+}
+
+.name{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.scale-label{
+    font-size: x-large;
 }

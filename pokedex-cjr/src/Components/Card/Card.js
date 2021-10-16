@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Card.css';
 import CardBackSide from '../CardBackSide/CardBackSide'
 import CardFrontSide from '../CardFrontSide/CardFrontSide'
 import ReactCardFlip from 'react-card-flip';
-import { GrRotateLeft } from "react-icons/gr"
-import RotationIcon from './rotation-icon.png'
+import axios from 'axios';
 
-const Card = () => {
+const Card = ({pokemon}) => {
 
-    const [isTurned, setIsTurned] = useState(false);
+    const [isTurned, setIsTurned] = useState(true);  //Flag para mostrar se a carta esta virada ou nao
 
     return (
             <div className="card" onMouseEnter={() => setIsTurned(true)} onMouseLeave={() => setIsTurned(false)}>
@@ -17,7 +16,7 @@ const Card = () => {
                         <CardFrontSide/>
                     </div>
                     <div>
-                        <CardBackSide/>
+                        <CardBackSide name={pokemon.name} weight={pokemon.weight} height={pokemon.height} id={pokemon.id} kind={pokemon.kind}/>
                     </div>
                 </ReactCardFlip>
             </div>
