@@ -8,3 +8,21 @@
     font-size: xx-large;
     text-align: center;
 }
+
+.pokemon-icon-container {
+    width: 230px; 
+    height: 176px; 
+    border: solid black 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+}
+
+.pokemon-icon-container img {
+    width: 75%;
+    height: auto;
+}
+
+.name {
+    margin-bottom: 50px;
+}

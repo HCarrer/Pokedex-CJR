@@ -13,7 +13,7 @@ const Card = ({pokemon}) => {
             <div className="card" onMouseEnter={() => setIsTurned(true)} onMouseLeave={() => setIsTurned(false)}>
                 <ReactCardFlip isFlipped={isTurned} flipDirection="horizontal">
                     <div>
-                        <CardFrontSide/>
+                        <CardFrontSide name={pokemon.name} image_url={pokemon.image_url} kind={pokemon.kind}/>
                     </div>
                     <div>
                         <CardBackSide name={pokemon.name} weight={pokemon.weight} height={pokemon.height} id={pokemon.id} kind={pokemon.kind}/>
