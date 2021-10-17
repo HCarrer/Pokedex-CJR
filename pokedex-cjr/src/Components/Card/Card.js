@@ -7,11 +7,11 @@ import axios from 'axios';
 
 const Card = ({pokemon}) => {
 
-    const [isTurned, setIsTurned] = useState(true);  //Flag para mostrar se a carta esta virada ou nao
+    const [isTurned, setIsTurned] = useState(false);  //Flag para mostrar se a carta esta virada ou nao
 
     return (
             <div className="card" onMouseEnter={() => setIsTurned(true)} onMouseLeave={() => setIsTurned(false)}>
-                <ReactCardFlip isFlipped={isTurned} flipDirection="horizontal">
+                <ReactCardFlip isFlipped={isTurned} flipDirection="horizontal" flipSpeedFrontToBack="0.3" flipSpeedBackToFront="0.3">
                     <div>
                         <CardFrontSide name={pokemon.name} image_url={pokemon.image_url} kind={pokemon.kind}/>
                     </div>
