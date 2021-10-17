@@ -1,7 +1,7 @@
 #card-back-side{
     width: 252px;  /* original: 6.3cm*/
     height: 352px; /* original: 8.8cm*/
-    border: solid black 3px;
+    border: solid rgb(238, 217, 25) 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
     background-color: white;
@@ -45,14 +45,6 @@
     column-gap: 5px;
 }
 
-.kind{
-    width: 30px;
-    height: 30px;
-    background-color: green;
-    border-radius: 100%;
-    border: solid black 3px;
-}
-
 .name{
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -61,3 +53,4 @@
 .scale-label{
     font-size: x-large;
 }
+

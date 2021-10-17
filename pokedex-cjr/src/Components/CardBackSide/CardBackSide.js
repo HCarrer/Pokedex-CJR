@@ -1,19 +1,25 @@
+import PokemonKind from '../PokemonKind/PokemonKind';
 import './CardBackSide.css'
 
-const CardBackSide = ({name, height, weight, id, kind}) => {
+const CardBackSide = ({name, height, weight, id, kind1, kind2}) => {
 
     var idStr = "" + id;                                                        //trecho de codigo responsavel
     var idPad = "000";                                                          //por tratar o id e mostra-lo
     var idTreated = idPad.substring(0, idPad.length - idStr.length) + idStr;    //sempre com 3 digitos na carta
 
+    var PokemonKind2 = <></>
+
+    if(kind2) {
+        PokemonKind2 = <PokemonKind kind={kind2}/>;
+    }
+
     return(
     <div id="card-back-side">
         <div className="id-kind-container">
             <span>#{idTreated}</span>
-            {/* <span>{kind}</span> */}
             <div className="kind-container">
-                <div className="kind"></div>
-                <div className="kind"></div>
+                <PokemonKind kind={kind1}/>
+                {PokemonKind2}
             </div>
         </div>
         <div className="weight-height-container">
