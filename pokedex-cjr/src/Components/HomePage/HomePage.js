@@ -16,7 +16,9 @@ const HomePage = () => {
     }, [])
 
     const allPokemonOnPage = pokemon.map(eachPokemon => {
-        return <Card pokemon={eachPokemon}/>
+        return  <div>
+                    <Card pokemon={eachPokemon}/>
+                </div>
     })
 
     return(

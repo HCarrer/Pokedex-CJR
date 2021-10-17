@@ -1,0 +1,195 @@
+.kind{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid rgb(238, 217, 25) 2px;
+    transition: 100ms;
+}
+
+.kind-hovered{
+    display: flex;
+    width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+    border: solid rgba(0, 0, 0, 0.24) 2px;
+    justify-content: center;
+    align-items: center;
+    transition: 100ms;
+}
+
+.kind-text{
+    font-size: x-large;
+}
+
+/* COLORS */
+.bug{
+    background-color: #7ED578;
+}
+
+.dragon{
+    background-color: #43372D;
+}
+
+.electric{
+    background-color: #FFF34B;
+}
+
+.fairy{
+    background-color: #FF7EE5;
+}
+
+.fighting{
+    background-color: #F17373;
+}
+
+.fire {
+    background-color: #ff8533;
+}
+
+.flying{
+    background-color: #D7F1E9;
+}
+
+.ghost{
+    background-color: #E2E2E2;
+}
+
+.grass{
+    background-color: #5EFF53;
+}
+
+.ground{
+    background-color: #AA8546;
+}
+
+.ice{
+    background-color: #AEE3FB;
+}
+
+.normal{
+    background-color: #D7DBA8;
+}
+
+.poison{
+    background-color: #CE52F9;
+}
+
+.psychic{
+    background-color: #FFC157;
+}
+
+.rock{
+    background-color: #757575;
+}
+
+.steel{
+    background-color: #A1A1A1;
+}
+
+.water{
+    background-color: #7192FF;
+}
+
+/* ICONS */
+
+.bug-icon{
+    background-image: url("./Icons/bug-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.dragon-icon{
+    background-image: url("./Icons/dragon-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.electric-icon{
+    background-image: url("./Icons/electric-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.fairy-icon{
+    background-image: url("./Icons/fairy-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.fighting-icon{
+    background-image: url("./Icons/fighting-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.fire-icon{
+    background-image: url("./Icons/fire-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.flying-icon{
+    background-image: url("./Icons/flying-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.ghost-icon{
+    background-image: url("./Icons/ghost-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.grass-icon{
+    background-image: url("./Icons/grass-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.ground-icon{
+    background-image: url("./Icons/ground-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.ice-icon{
+    background-image: url("./Icons/ice-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.normal-icon{
+    background-image: url("./Icons/normal-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.poison-icon{
+    background-image: url("./Icons/poison-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.psychic-icon{
+    background-image: url("./Icons/psychic-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.rock-icon{
+    background-image: url("./Icons/rock-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.steel-icon{
+    background-image: url("./Icons/steel-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.water-icon{
+    background-image: url("./Icons/water-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
