@@ -29,7 +29,7 @@ const CardBackSide = ({name, height, weight, id, kind1, kind2}) => {
             </div>
             <div className="height-container">
                 <span>Altura:</span>
-                <span>{height}<span className="scale-label">cm</span></span>
+                <span>{height / 10}<span className="scale-label">m</span></span>
             </div>
         </div>
         <span className="name">{name}</span>

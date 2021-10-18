@@ -16,21 +16,297 @@
     width: 90%;
     height: 45%;
     border: solid rgb(238, 217, 25) 5px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
     margin-left: auto;
     margin-right: auto;
     margin-top: 6px;
-    background-color: rgb(255, 255, 255);
 }
 
 .pokemon-icon-container img {
     width: 65%;
 }
 
-.name {
-    margin-bottom: 50px;
+.kinds-brief-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(192, 192, 192, 0.623);
+    width: 91.5%;
+    height: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3px;
+    border: solid rgb(238, 217, 25) 3px;
+    border-radius: 0px 0px 5px 5px;
 }
+
+.kinds-brief-text{
+    font-size: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-transform: capitalize;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: solid black;
+    border-width: 2px 0px 2px 0px;
+    width: 90%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stats-text{
+    font-size: small;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.name {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.kind-icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
+    height: 8%;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
+
+.kind-icon{
+    height: 24px;
+    width: 24px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.842);
+    border-radius: 100%;
+    border: solid rgb(238, 217, 25) 2px;
+    z-index: 999;
+}
+
+/* icons images */
+.bug-icon-small{
+    background-image: url("../PokemonKind/Icons/bug-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.dragon-icon-small{
+    background-image: url("../PokemonKind/Icons/dragon-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.electric-icon-small{
+    background-image: url("../PokemonKind/Icons/electric-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.fairy-icon-small{
+    background-image: url("../PokemonKind/Icons/fairy-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.fighting-icon-small{
+    background-image: url("../PokemonKind/Icons/fighting-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.fire-icon-small{
+    background-image: url("../PokemonKind/Icons/fire-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.flying-icon-small{
+    background-image: url("../PokemonKind/Icons/flying-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.ghost-icon-small{
+    background-image: url("../PokemonKind/Icons/ghost-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.grass-icon-small{
+    background-image: url("../PokemonKind/Icons/grass-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.ground-icon-small{
+    background-image: url("../PokemonKind/Icons/ground-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.ice-icon-small{
+    background-image: url("../PokemonKind/Icons/ice-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.normal-icon-small{
+    background-image: url("../PokemonKind/Icons/normal-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.poison-icon-small{
+    background-image: url("../PokemonKind/Icons/poison-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.psychic-icon-small{
+    background-image: url("../PokemonKind/Icons/psychic-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.rock-icon-small{
+    background-image: url("../PokemonKind/Icons/rock-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.steel-icon-small{
+    background-image: url("../PokemonKind/Icons/steel-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.water-icon-small{
+    background-image: url("../PokemonKind/Icons/water-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
+.bug-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/bug.jpg);
+    background-size: 300px 200px;
+}
+
+.dragon-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/dragon.jpg);
+    background-size: 300px 200px;
+}
+
+.electric-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/electric.jpg);
+    background-size: 300px 200px;
+}
+
+.fairy-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/fairy.jpg);
+    background-size: 300px 200px;
+}
+
+.fighting-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/fighting.jpg);
+    background-size: 300px 200px;
+}
+
+.fire-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/fire.jpeg);
+    background-size: 300px 200px;
+}
+
+.flying-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/flying.jpg);
+    background-size: 300px 200px;
+}
+
+.ghost-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/ghost.jpg);
+    background-size: 300px 200px;
+}
+
+.grass-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/grass.jpg);
+    background-size: 300px 200px;
+}
+
+.ground-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/ground.jpeg);
+    background-size: 300px 200px;
+}
+
+.ice-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/ice.jpg);
+    background-size: 300px 200px;
+}
+
+.normal-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/normal.jpg);
+    background-size: 300px 200px;
+}
+
+.poison-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/poison.jpg);
+    background-size: 300px 200px;
+}
+
+.psychic-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/psychic.jpg);
+    background-size: 300px 200px;
+}
+
+.rock-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/rock.jpg);
+    background-size: 300px 200px;
+}
+
+.steel-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/steel.jpg);
+    background-size: 300px 200px;
+}
+
+.water-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/water.jpg);
+    background-size: 300px 200px;
+}
+
+
+
 
 
 /* Card Textures */
