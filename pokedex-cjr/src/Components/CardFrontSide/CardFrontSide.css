@@ -4,25 +4,100 @@
     border: solid rgb(238, 217, 25) 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
-    background-color: white;
+    background-color: white;   /* comment when textures are done */
     font-size: xx-large;
     text-align: center;
 }
 
 .pokemon-icon-container {
-    width: 230px; 
-    height: 176px; 
-    border: solid black 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 45%;
+    border: solid rgb(238, 217, 25) 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
     margin-left: auto;
     margin-right: auto;
     margin-top: 6px;
+    background-color: rgb(255, 255, 255);
 }
 
 .pokemon-icon-container img {
-    width: 75%;
-    height: auto;
+    width: 65%;
 }
 
 .name {
     margin-bottom: 50px;
+}
+
+
+/* Card Textures */
+.bug-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(./Textures/green-texture.png);
+}
+
+.dragon-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/silver-texture.png);
+}
+
+.electric-texture{
+    background-image: linear-gradient(rgba(255, 238, 0, 0.1), rgba(255, 238, 0, 0.1)), url(./Textures/yellow-texture.png);
+}
+
+.fairy-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/purple-texture.png);
+}
+
+.fighting-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/orange-texture.png);
+}
+
+.fire-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/red-texture.png);
+}
+
+.flying-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/silver-texture.png);
+}
+
+.ghost-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/purple-texture.png);
+}
+
+.grass-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(./Textures/green-texture.png);
+}
+
+.ground-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/orange-texture.png);
+}
+
+.ice-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/blue-texture.png);
+}
+
+.normal-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/silver-texture.png);
+}
+
+.poison-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/purple-texture.png);
+}
+
+.psychic-texture{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/purple-texture.png);
+}
+
+.rock-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/orange-texture.png);
+}
+
+.steel-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(./Textures/silver-texture.png);
+}
+
+.water-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Textures/blue-texture.png);
 }

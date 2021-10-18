@@ -1,7 +1,7 @@
 #card-back-side{
     width: 252px;  /* original: 6.3cm*/
     height: 352px; /* original: 8.8cm*/
-    border: solid rgb(238, 217, 25) 10px;
+    border: solid rgba(25,38,83,255) 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
     background-color: white;
@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./background.png);
+    background-size: 282px 382px;
+    background-position: center;
+    color: white;
 }
 
 .id-kind-container {
