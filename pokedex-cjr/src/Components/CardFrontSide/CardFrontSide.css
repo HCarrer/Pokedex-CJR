@@ -125,6 +125,13 @@
     z-index: 1000;
 }
 
+.dark-icon-small{
+    background-image: url("../PokemonKind/Icons/dark-icon.png");
+    background-size: 26px 26px;
+    background-position: center;
+    z-index: 1000;
+}
+
 .dragon-icon-small{
     background-image: url("../PokemonKind/Icons/dragon-icon.png");
     background-size: 26px 26px;
@@ -248,6 +255,11 @@
     background-size: 300px 200px;
 }
 
+.dark-background-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./Backgrounds/dark.jpg);
+    background-size: 300px 200px;
+}
+
 .dragon-background-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/dragon.jpg);
     background-size: 300px 200px;
@@ -336,6 +348,10 @@
 /* Card Textures */
 .bug-texture{
     background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(./Textures/green-texture.png);
+}
+
+.dark-texture{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Textures/silver-texture.png);
 }
 
 .dragon-texture{
