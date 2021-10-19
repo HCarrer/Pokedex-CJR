@@ -1,0 +1,28 @@
+.page-selector{
+    width: fit-content;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    font-size: 40px;
+    color: rgb(0, 120, 192);
+    border-style: none;
+    text-align: center;
+    width: 8%;
+    background-color: transparent;
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+    color: rgb(0, 120, 192);
+}
+
+.arrow:hover {
+    cursor: pointer;
+    color: rgb(0, 96, 144);
+}

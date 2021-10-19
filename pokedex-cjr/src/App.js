@@ -1,8 +1,10 @@
 import './App.css';
-import HomePage from './Components/HomePage/HomePage';
+import PokemonPage from './Components/PokemonPage/PokemonPage';
 import Navbar from './Components/Navbar/Navbar';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import LoginForm from './LoginForm/LoginForm';
+import Favourites from './Components/Favourites/Favourites';
 
 function App() {
   return (
@@ -11,10 +13,16 @@ function App() {
       <Navbar/>
         <Switch>
           <Route exact path="/">
-            <HomePage/>
+            <PokemonPage/>
+          </Route>
+          <Route path='/:pageNumber'>
+            <PokemonPage/>
           </Route>
           <Route path="/login">
             <LoginForm/>
+          </Route>
+          <Route path="/favourites">
+            <Favourites/>
           </Route>
         </Switch>
       </Router>
