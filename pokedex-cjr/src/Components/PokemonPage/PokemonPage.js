@@ -26,7 +26,7 @@ const PokemonPage = () => {
             setPokemons(resp.data.data)
             history.push(`${pageNumber}`)
         })
-    }, [API])
+    }, [API, history, pageNumber])
 
     const allPokemonOnPage = pokemon.map(eachPokemon => {
         return  <div>

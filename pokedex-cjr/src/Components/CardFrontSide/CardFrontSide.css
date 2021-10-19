@@ -7,6 +7,7 @@
     background-color: white;   /* comment when textures are done */
     font-size: xx-large;
     text-align: center;
+    cursor: pointer;
 }
 
 .pokemon-icon-container {
@@ -79,7 +80,17 @@
     margin-bottom: 5%;
 }
 
+.name-treated{
+    margin-top: 1.3%;
+    margin-bottom: 1.3%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
 .kind-icons-container{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -89,6 +100,7 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 2%;
+    
 }
 
 .kind-icon{

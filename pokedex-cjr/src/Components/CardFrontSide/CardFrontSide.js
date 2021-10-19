@@ -37,15 +37,24 @@ const CardFrontSide = ({name, image_url, kind1, kind2, weight, height, HP, attac
                         </div>
     }
 
+
+    let nameFixed =     <div className="name">
+                            <span>{name}</span>
+                        </div>
+
+    if(name.length > 15) {
+        nameFixed =     <div className="name-treated">
+                            <span>{name}</span>
+                        </div>
+    }
+
     return (
         <div id="card-front-side" className={`${kind1}-texture darken`}>
             <div className={`pokemon-icon-container ${kind1}-background-image`}>
                 <img alt="" src={image_url}/>
             </div>
             {kindsBriefText}
-            <div className="name">
-                <span>{name}</span>
-            </div>
+            {nameFixed}
             <div className="stats-container">
                 <div className="stats-text-container">
                     <span className="stats-text">HP</span>

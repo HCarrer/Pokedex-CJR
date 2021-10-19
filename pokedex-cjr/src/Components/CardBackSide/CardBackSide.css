@@ -15,6 +15,7 @@
     background-size: 282px 382px;
     background-position: center;
     color: white;
+    cursor: pointer;
 }
 
 .id-kind-container {
