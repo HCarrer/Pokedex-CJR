@@ -1,0 +1,12 @@
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.card-mockup:hover {
+    transform: rotateY(180deg);
+}

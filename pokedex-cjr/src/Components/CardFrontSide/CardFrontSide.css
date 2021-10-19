@@ -100,6 +100,11 @@
     z-index: 999;
 }
 
+
+
+
+
+
 /* icons images */
 .bug-icon-small{
     background-image: url("../PokemonKind/Icons/bug-icon.png");
@@ -220,6 +225,12 @@
     z-index: 1000;
 }
 
+
+
+
+
+
+/* background images */
 .bug-background-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/bug.jpg);
     background-size: 300px 200px;
@@ -304,6 +315,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./Backgrounds/water.jpg);
     background-size: 300px 200px;
 }
+
 
 
 
