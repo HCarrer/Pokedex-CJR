@@ -1,0 +1,37 @@
+.individual-pokemon-display{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    height: 45vh;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.individual-pokemon-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fav-button{
+    height: 10%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgb(0, 96, 144), rgb(0, 96, 192));
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: white;
+}
+
+.fav-button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    border: rgb(0, 120, 192) solid 2px;
+    color: rgb(0, 120, 192);
+}

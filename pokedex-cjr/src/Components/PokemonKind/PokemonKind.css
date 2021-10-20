@@ -28,8 +28,12 @@
     background-color: #7ED578;
 }
 
+.dark{
+    background-color: #2e2c2a;
+}
+
 .dragon{
-    background-color: #43372D;
+    background-color: #09679e;
 }
 
 .electric{
@@ -77,7 +81,7 @@
 }
 
 .psychic{
-    background-color: #FFC157;
+    background-color: #ff5328;
 }
 
 .rock{
@@ -96,6 +100,12 @@
 
 .bug-icon{
     background-image: url("./Icons/bug-icon.png");
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.dark-icon{
+    background-image: url("./Icons/dark-icon.png");
     background-size: 32px 32px;
     background-position: center;
 }
