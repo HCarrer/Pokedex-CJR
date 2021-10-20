@@ -11,7 +11,7 @@ const LoginButton = () => {
         <div>
             <button className="vertical-align-navbar login-button-navbar" onClick={() => setShowLoginForm(true)}>Login</button>
             <Modal show={showLoginForm} onClose={() => setShowLoginForm(false)}>
-                <LoginForm/>
+                <LoginForm setShowLogInForm={setShowLoginForm} showLoginForm={showLoginForm}/>
             </Modal>
         </div>
     );
