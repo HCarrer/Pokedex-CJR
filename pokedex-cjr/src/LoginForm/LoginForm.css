@@ -61,9 +61,35 @@
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
 }
 
 .login-form-button:hover {
     background-color: white;
     color: rgb(0, 96, 144);
+}
+
+.error-mensagem {
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cancel-form-button{
+    cursor: pointer;
+    font-size: x-large;
+    background-color: rgb(199, 12, 12);
+    color: white;
+    border: white solid 2px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.cancel-form-button:hover {
+    background-color: white;
+    color: rgb(199, 12, 12);
 }
