@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import LoginForm from './LoginForm/LoginForm';
-import Favourites from './Components/Favourites/Favourites';
+//import Favourites from './Components/Favourites/Favourites';
 import UserContext from './Components/Context/Context';
 
 function App() {
@@ -26,9 +26,9 @@ function App() {
             <Route path="/login">
               <LoginForm/>
             </Route>
-            <Route path="/favourites">
+{/*             <Route path="/favourites">
               <Favourites/>
-            </Route>
+            </Route> */}
           </Switch>
         </Router>
       </UserContext.Provider>

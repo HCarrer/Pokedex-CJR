@@ -4,6 +4,7 @@ import { useContext} from 'react';
 import UserContext from '../Context/Context';
 
 import LoginButton from '../LoginButton/LoginButton';
+import Search from '../Searchbar/Searchbar';
 
 const Navbar = () => {
 
@@ -20,7 +21,7 @@ const Navbar = () => {
         <div>
             <div className="navbar-container">
                 <div className="vertical-align-navbar">
-                    <FaSearch/>
+                    <Search/>
                 </div>
                 <h1 className="vertical-align-navbar">
                     <a href="/" className="title-navbar">POKEDEX</a>
