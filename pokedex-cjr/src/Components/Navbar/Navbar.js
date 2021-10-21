@@ -4,6 +4,7 @@ import { useContext} from 'react';
 import UserContext from '../Context/UserContext';
 import { Link } from 'react-router-dom'
 import LoginButton from '../LoginButton/LoginButton';
+import Search from '../Searchbar/Searchbar';
 
 const Navbar = () => {
 
@@ -24,10 +25,8 @@ const Navbar = () => {
     return(
         <div>
             <div className="navbar-container">
-                <div className="vertical-align-navbar justify-left">
-                    <div className="search-icon">
-                        <FaSearch/>
-                    </div>
+                <div className="vertical-align-navbar">
+                    <Search/>
                 </div>
                 <h1 className="vertical-align-navbar justify-center">
                     <Link to="/" className="title-navbar">POKEDEX</Link>
