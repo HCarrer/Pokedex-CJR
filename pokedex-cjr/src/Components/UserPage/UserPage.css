@@ -1,0 +1,41 @@
+.fav-cards-title-container{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    margin: 30px auto;
+}
+
+.fav-cards-title-text{
+    font-size: xx-large;
+    font-weight: bold;
+    border: solid rgb(0, 96, 144);
+    border-width: 1px 0px 1px 0px;
+    width: 30%;
+    text-align: center;
+    color: rgb(0, 96, 144);
+}
+
+@media only screen and (max-width: 600px) {
+    .fav-cards-title-text{
+        font-size: large;
+        font-weight: bold;
+        border: solid rgb(0, 96, 144);
+        border-width: 1px 0px 1px 0px;
+        width: 50%;
+        text-align: center;
+        color: rgb(0, 96, 144);
+    }
+}
+
+.fav-cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 6%;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

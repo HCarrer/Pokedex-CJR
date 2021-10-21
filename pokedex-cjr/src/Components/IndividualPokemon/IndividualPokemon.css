@@ -3,23 +3,48 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30vw;
-    height: 45vh;
+    row-gap: 20px;
+    width: fit-content;
+    height: fit-content;
     z-index: 1000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.individual-pokemon-cards{
+@media only screen and (max-width: 600px) {
+    .individual-pokemon-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .individual-pokemon-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        justify-content: space-between;
+    }
+}
+/* .individual-pokemon-cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
     justify-content: space-between;
-}
+} */
 
 .fav-button{
     height: 10%;
-    width: 50%;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgb(0, 96, 144), rgb(0, 96, 192));

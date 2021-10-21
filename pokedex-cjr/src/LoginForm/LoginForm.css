@@ -46,6 +46,7 @@
 
 #login-form-input::placeholder{
     color: white;
+    text-align: left;
 }
 
 #login-form-input:focus{
@@ -74,6 +75,7 @@
     font-size: medium;
     margin-top: 10px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .cancel-form-button{
