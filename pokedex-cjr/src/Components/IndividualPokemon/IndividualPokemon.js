@@ -36,23 +36,31 @@ const IndividualPokemon = ({name, image_url, kind1, kind2, weight, height, HP, a
     }
 
     function clickFavourite() {
-        async function addToFavourites() {
-            axios.post(`https://pokedex20201.herokuapp.com/users/${user.user.username}/starred/${name}`)
-            .then((resp) => {
-                alert(capitalizeFirstLetter(name) + " foi favoritado com sucesso!")
-            })
+        if(user) {
+            async function addToFavourites() {
+                axios.post(`https://pokedex20201.herokuapp.com/users/${user.user.username}/starred/${name}`)
+                .then((resp) => {
+                    alert(capitalizeFirstLetter(name) + " foi favoritado com sucesso!")
+                })
+            }
+            addToFavourites()
+        } else {
+            alert("Faca o login para poder adicionar um pokemon")
         }
-        addToFavourites()
     }
 
     function clickRemoveFavourite() {
-        async function removeFromFavourites() {
-            axios.delete(`https://pokedex20201.herokuapp.com/users/${user.user.username}/starred/${name}`)
-            .then((resp) => {
-                alert(capitalizeFirstLetter(name) + " foi removido dos seus pokemons com sucesso!")
-            })
+        if(user) {
+            async function removeFromFavourites() {
+                axios.delete(`https://pokedex20201.herokuapp.com/users/${user.user.username}/starred/${name}`)
+                .then((resp) => {
+                    alert(capitalizeFirstLetter(name) + " foi removido dos seus pokemons com sucesso!")
+                })
+            }
+            removeFromFavourites()
+        } else {
+            alert("Faca o login para poder remover um pokemon")
         }
-        removeFromFavourites()
     }
 
     return(
