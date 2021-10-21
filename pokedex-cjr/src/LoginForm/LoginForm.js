@@ -1,24 +1,18 @@
 import { useContext, useState } from 'react';
-import UserContext from '../Components/Context/Context';
+import UserContext from '../Components/Context/UserContext';
 import './LoginForm.css';
 import axios from 'axios';
-import { Link, Redirect } from 'react-router-dom'
 
 const LoginForm = ({showLogInForm ,setShowLogInForm}) => {
 
-    const {user, setUser} = useContext(UserContext)
+    const {setUser} = useContext(UserContext)
     const [nome, setNome] = useState("")
     let ErrorLogIn = <><button className="login-form-button">Login</button></>
-    const [deuerro, setdeuerro] = useState(false)
-    let logado = false
-
-    function handleCancel(){
-        setShowLogInForm(false)
-    }
+    const [HasError, setHasError] = useState(false)
 
     function handleSubmit(event){
         event.preventDefault()
-        async function CriarConta(){
+        async function createAccount(){
             axios.post(`https://pokedex20201.herokuapp.com/users`, {username : nome})
             .then((resp) => {
                 setShowLogInForm(false)
@@ -29,27 +23,24 @@ const LoginForm = ({showLogInForm ,setShowLogInForm}) => {
             axios.get(`https://pokedex20201.herokuapp.com/users/${nome}`)
             .then((resp)=>{
                 setUser(resp.data)
-                logado = true
-                //setShowLogInForm(false)
             })
             .catch((err)=>{
-                setdeuerro(true)
+                setHasError(true)
             })
         }
-        if (deuerro){
-            CriarConta()
+        if (HasError){
+            createAccount()
         }else{
             login()
         }
         
     }
 
-    if (deuerro) {
+    if (HasError) {
         ErrorLogIn = <>
-
             <span className="error-mensagem">Ops! O usuário '{nome}' não foi encontrado, deseja criar uma conta com esse mesmo nome?</span>
             <button className="login-form-button" onClick={handleSubmit}>Criar Conta</button>
-            <button className="cancel-form-button" onClick={() => setdeuerro(false)}>Voltar</button>
+            <button className="cancel-form-button" onClick={() => setHasError(false)}>Voltar</button>
         </>
     }
 

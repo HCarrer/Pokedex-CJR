@@ -1,16 +1,21 @@
 import './PageSelector.css';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import PageContext from '../Context/PageContext'
+import { useContext} from 'react';
 
 
-const PageSelector = ({PageNumber, SetPageNumber}) => {
+const PageSelector = () => {
+
+    const {pageNumber, setPageNumber} = useContext(PageContext)
+
 
     function handleChange(event) {
         if(event.target.value >= 1 && event.target.value <= 33) {
-            SetPageNumber(event.target.value)
+            setPageNumber(event.target.value)
         } else if(event.target.value < 1) {
-            SetPageNumber(1)
+            setPageNumber(1)
         } else if(event.target.value > 33){
-            SetPageNumber(33)
+            setPageNumber(33)
         }
         event.preventDefault()
     }
@@ -20,18 +25,19 @@ const PageSelector = ({PageNumber, SetPageNumber}) => {
     }
 
     function nextPage() {
-        if(PageNumber === 33) {
-            SetPageNumber(33)
+        if(pageNumber === 33) {
+            setPageNumber(33)
         } else {
-            SetPageNumber(PageNumber + 1)
+            setPageNumber(pageNumber + 1)
+            console.log(pageNumber)
         }
     }
 
     function prevPage() {
-        if(PageNumber === 1) {
-            SetPageNumber(1)
+        if(pageNumber === 1) {
+            setPageNumber(1)
         } else {
-            SetPageNumber(PageNumber - 1)
+            setPageNumber(pageNumber - 1)
         }
     }
 
@@ -40,7 +46,7 @@ const PageSelector = ({PageNumber, SetPageNumber}) => {
                 <div onClick={() => prevPage()}>
                     <BsChevronLeft className="arrow"/>
                 </div>
-                <input min="0" type="text" onSubmit={handleSubmit} value={PageNumber} onChange={handleChange}></input>
+                <input min="0" type="text" onSubmit={handleSubmit} value={pageNumber} onChange={handleChange}></input>
                 <div onClick={() => nextPage()}>
                     <BsChevronRight className="arrow"/>
                 </div>

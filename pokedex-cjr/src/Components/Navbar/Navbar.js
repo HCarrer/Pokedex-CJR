@@ -1,29 +1,36 @@
 import './Navbar.css'
 import { FaSearch } from 'react-icons/fa';
 import { useContext} from 'react';
-import UserContext from '../Context/Context';
-
+import UserContext from '../Context/UserContext';
+import { Link } from 'react-router-dom'
 import LoginButton from '../LoginButton/LoginButton';
 
 const Navbar = () => {
 
-    const {user, setUser} = useContext(UserContext)
+    const {user} = useContext(UserContext)
     let LoggedIn = <></>
     if (user == null){
-        LoggedIn= <div className="login-button"><LoginButton/></div>
+        LoggedIn=   <div className="login-button justify-right">
+                        <LoginButton/>
+                    </div>
     }else{
-        LoggedIn = <span>{user.user.username}</span>
+        LoggedIn =  <div className="user justify-right">
+                        <Link to={`/${user.user.username}`}>
+                            {user.user.username[0]}
+                        </Link>
+                    </div>
     }
 
-    console.log(user)
     return(
         <div>
             <div className="navbar-container">
-                <div className="vertical-align-navbar">
-                    <FaSearch/>
+                <div className="vertical-align-navbar justify-left">
+                    <div className="search-icon">
+                        <FaSearch/>
+                    </div>
                 </div>
-                <h1 className="vertical-align-navbar">
-                    <a href="/" className="title-navbar">POKEDEX</a>
+                <h1 className="vertical-align-navbar justify-center">
+                    <Link to="/" className="title-navbar">POKEDEX</Link>
                 </h1>
                 {LoggedIn}
             </div>
