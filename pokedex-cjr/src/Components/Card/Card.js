@@ -19,7 +19,6 @@ const Card = ({pokemon}) => {
 
     const [showIndividuaPokemon, setshowIndividuaPokemon] = useState(false);
 
-
     useEffect(() => {
         axios.get(PokeApi)
         .then((resp) => {
@@ -35,8 +34,8 @@ const Card = ({pokemon}) => {
             setAttack(resp.data.stats[1].base_stat);
             setDefense(resp.data.stats[2].base_stat);
         })
+        /* checkIfIsFavourite() */
     }, [pokemon.name, PokeApi])
-
 
     const [isTurned, setIsTurned] = useState(false);  //Flag para mostrar se a carta esta virada ou nao
 
@@ -47,7 +46,7 @@ const Card = ({pokemon}) => {
                     </Modal>
                 <div onMouseEnter={() => setIsTurned(true)} onMouseLeave={() => setIsTurned(false)}>
                     <ReactCardFlip isFlipped={isTurned} flipDirection="horizontal" flipSpeedFrontToBack="0.3" flipSpeedBackToFront="0.3">
-                        <div onClick={() => setshowIndividuaPokemon(true)}>
+                        <div onClick={() => setshowIndividuaPokemon(true) }>
                             <CardFrontSide name={pokemon.name} image_url={pokemon.image_url} kind1={primaryKindFixed} kind2={secundaryKindFixed} weight={pokemon.weight} height={pokemon.height} HP={HP} attack={attack} defense={defense}/>
                         </div>
                         <div onClick={() => setshowIndividuaPokemon(true)}>
