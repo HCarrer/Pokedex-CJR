@@ -4,6 +4,7 @@ import UserContext from '../Context/UserContext';
 import { Link } from 'react-router-dom'
 import LoginButton from '../LoginButton/LoginButton';
 import Search from '../Searchbar/Searchbar';
+import Logo from './pokedex-logo.png'
 
 const Navbar = () => {
 
@@ -27,7 +28,9 @@ const Navbar = () => {
                 <Search/>
             </div>
             <h1 className="navbar-item vertical-align-navbar">
-                <Link to="/" className="title-navbar">POKEDEX</Link>
+                <Link to="/" className="title-navbar">
+                    <img className="logo" alt="Pokedex Logo" src={Logo}></img>
+                </Link>
             </h1>
             {LoggedIn}
         </div>
