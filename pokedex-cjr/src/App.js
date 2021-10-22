@@ -6,11 +6,23 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import UserContext from './Components/Context/UserContext';
 import UserPage from './Components/UserPage/UserPage';
 import PageContext from './Components/Context/PageContext';
+import isLogged from './Components/Context/isLoggedContext';
+import IsLoggedContext from './Components/Context/isLoggedContext';
 
 function App() {
 
   const [user, setUser] = useState(null)
   const [pageNumber, setPageNumber] = useState(1)
+  const [isLogged, setIsLogged] = useState(false)
+  
+  const logged = localStorage.getItem("user")
+  console.log(logged)
+
+  if(logged) {
+    console.log("logado")
+  } else {
+    console.log("deslogado")
+  }
 
   let userName
 
@@ -20,21 +32,23 @@ function App() {
 
   return (
     <div>
-      <UserContext.Provider value={{user, setUser}}>
-        <PageContext.Provider value ={{pageNumber, setPageNumber}}>
-          <Router>
-          <Navbar/>
-            <Switch>
-              <Route exact path="/">
-                <PokemonPage/>
-              </Route>
-              <Route path={`/${userName}`}>
-                <UserPage/>
-              </Route>
-            </Switch>
-          </Router>
-        </PageContext.Provider>
-      </UserContext.Provider>
+      <IsLoggedContext.Provider value={{isLogged, setIsLogged}}>
+        <UserContext.Provider value={{user, setUser}}>
+          <PageContext.Provider value ={{pageNumber, setPageNumber}}>
+            <Router>
+            <Navbar/>
+              <Switch>
+                <Route exact path="/">
+                  <PokemonPage/>
+                </Route>
+                <Route path={`/${userName}`}>
+                  <UserPage/>
+                </Route>
+              </Switch>
+            </Router>
+          </PageContext.Provider>
+        </UserContext.Provider>
+      </IsLoggedContext.Provider>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import axios from 'axios';
 
 const LoginForm = ({showLogInForm ,setShowLogInForm}) => {
 
+
     const {setUser} = useContext(UserContext)
     const [nome, setNome] = useState("")
     let ErrorLogIn = <><button className="login-form-button">Login</button></>
@@ -23,6 +24,8 @@ const LoginForm = ({showLogInForm ,setShowLogInForm}) => {
             axios.get(`https://pokedex20201.herokuapp.com/users/${nome}`)
             .then((resp)=>{
                 setUser(resp.data)
+                /* console.log(resp.data.user) */
+                localStorage.setItem("user", JSON.stringify(resp.data.user))
             })
             .catch((err)=>{
                 setHasError(true)
