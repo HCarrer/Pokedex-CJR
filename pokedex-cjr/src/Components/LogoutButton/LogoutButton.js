@@ -7,10 +7,15 @@ const LogoutButton = () => {
 
     const {setUser} = useContext(UserContext)
 
+    const logout = () => {
+        setUser(null)
+        localStorage.setItem("pokedex@user", null)
+    }
+
     return (
         <div>
             <Link to="/">
-                <button className="vertical-align-navbar logout-button-navbar" onClick={() => setUser(null)}>Logout</button>
+                <button className="vertical-align-navbar logout-button-navbar" onClick={() => logout()}>Logout</button>
             </Link>
         </div>
     );
