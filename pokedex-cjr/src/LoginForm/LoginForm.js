@@ -24,8 +24,7 @@ const LoginForm = ({showLogInForm ,setShowLogInForm}) => {
             axios.get(`https://pokedex20201.herokuapp.com/users/${nome}`)
             .then((resp)=>{
                 setUser(resp.data)
-                /* console.log(resp.data.user) */
-                localStorage.setItem("user", JSON.stringify(resp.data.user))
+                localStorage.setItem("pokedex@user", JSON.stringify(resp.data))
             })
             .catch((err)=>{
                 setHasError(true)
